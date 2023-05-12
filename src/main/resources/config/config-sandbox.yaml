@@ -1,0 +1,24 @@
+api:
+  autodiscoveryId: "123456"  
+
+http:
+ listener:
+  host: "0.0.0.0"
+  port: "8083"
+  timeout: "30000"
+ request:
+  host: "0.0.0.0"
+  port: "8085"
+  timeout: "30000"
+  path: "/api/price_harm"
+  
+https:
+  host: "0.0.0.0"
+  port: "8082"
+  
+tls:
+  type: "JKS"
+  path: "iewc-SSL-Keystore.jks"
+  alias: "*.esb.internal.iewc.com"
+  keypassword: test123
+  password: test123
